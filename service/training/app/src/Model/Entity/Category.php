@@ -9,7 +9,7 @@ use Cake\ORM\Entity;
  * Category Entity
  *
  * @property int $id
- * @property int $parent_id
+ * @property int|null $parent_id
  * @property int $lft
  * @property int $rght
  * @property string $name
@@ -17,9 +17,9 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
- * @property \App\Model\Entity\ParentCategory $parent_category
+ * @property \App\Model\Entity\Category $parent_category
  * @property \App\Model\Entity\Article[] $articles
- * @property \App\Model\Entity\ChildCategory[] $child_categories
+ * @property \App\Model\Entity\Category[] $child_categories
  */
 class Category extends Entity
 {

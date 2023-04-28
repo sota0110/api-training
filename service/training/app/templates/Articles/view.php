@@ -23,6 +23,10 @@
                     <td><?= h($article->title) ?></td>
                 </tr>
                 <tr>
+                    <th><?= __('Category') ?></th>
+                    <td><?= $article->has('category') ? $this->Html->link($article->category->name, ['controller' => 'Categories', 'action' => 'view', $article->category->id]) : '' ?></td>
+                </tr>
+                <tr>
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($article->id) ?></td>
                 </tr>

@@ -2,6 +2,7 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Article $article
+ * @var string[]|\Cake\Collection\CollectionInterface $categories
  */
 ?>
 <div class="row">
@@ -24,6 +25,7 @@
                 <?php
                     echo $this->Form->control('title');
                     echo $this->Form->control('body');
+                    echo $this->Form->control('category_id', ['options' => $categories]);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

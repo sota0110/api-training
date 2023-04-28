@@ -25,8 +25,8 @@ class CategoriesFixture extends TestFixture
                 'rght' => 1,
                 'name' => 'Lorem ipsum dolor sit amet',
                 'description' => 'Lorem ipsum dolor sit amet',
-                'created' => '2023-04-28 05:20:18',
-                'modified' => '2023-04-28 05:20:18',
+                'created' => '2023-04-28 06:19:58',
+                'modified' => '2023-04-28 06:19:58',
             ],
         ];
         parent::init();
