@@ -5,6 +5,7 @@
  * @var \Cake\Collection\CollectionInterface|string[] $categories
  */
 ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
